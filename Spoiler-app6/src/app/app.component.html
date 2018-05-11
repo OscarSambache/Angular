@@ -1,0 +1,18 @@
+<div [hidden]="false">
+  <h1 [class] = "nombreClase ">Hola amigos</h1>
+
+
+  <input typt = "text" #textoInput >
+  <p> Nombre: {{nombre}}</p>
+  <p> Apellido: {{apellido}}</p>
+  <p> Edad: {{edad}}</p>
+  <p> Sueldo: {{sueldo | currency}}</p>
+  <p> Fecha de nacimiento: {{fechaNacimiento | date: 'yyyy/MM/dd'}}</p>
+
+  <button (click)="cambiarClaseTitulo()">{{nombreBoton}}</button>
+  <button (click)="aplicarClase(textoInput.value)" >
+    Aplicar clase
+  </button>
+</div>
+
+
