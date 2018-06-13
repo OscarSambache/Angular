@@ -1,0 +1,17 @@
+.sa-fondo-titulo {
+  margin-bottom: 18px;
+  color: #333;
+  background-color: #f6f4ff;
+  text-rendering: optimizeLegibility;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  display: block;
+  -webkit-margin-before: 1.67em;
+  -webkit-margin-after: 1.67em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  box-sizing: border-box;
+}
+
+

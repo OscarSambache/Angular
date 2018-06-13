@@ -1,5 +1,44 @@
+.sa-fondo-pelicula-banner{
+  background-color: #000;
+}
+.sa-color-letras-peliculas-banner{
+  color: #fff
+}
+.fondo-menu1{
+  background-color: #1b1b1b;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #777;
+
+}
+.fondo2-menu1{
+  background-color: #1b1b1b;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: .975em;
+}
+.fondo-menu2{
+  background-color: #222222;
+  border-left-style: solid;
+  border-left-color: #999;
+  border-left-width: 1px;
+}
+
+.fondo-icono-buscar{
+  background-color: #333;
+}
+
+.fondo-linea-colores{
+  background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+.margen{
+  margin-top: 20px;
+}
+/*
+
 .sa-titulo{
-  /*propiedad: valorDeLaPropiedad;*/
+
   color: rgba(255, 25, 22, 0.71);
   background-color:#001d76;
   border-style: solid;
@@ -8,7 +47,7 @@
 
 }
 .sa-subtitulo{
-  /*propiedad: valorDeLaPropiedad;*/
+
   color: rgba(29, 34, 255, 0.82);
   background-color: #760f14;
   border-style: solid;
@@ -16,3 +55,4 @@
   border-width: 4px;
 
 }
+*/

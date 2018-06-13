@@ -1,18 +1,404 @@
-<div [hidden]="false">
-  <h1 [class] = "nombreClase ">Hola amigos</h1>
+<button mat-button color="accent">
+  click me!!!
+</button>
+<!--<div class="row" style="width: 20%; margin-left: auto; margin-right: auto; text-align: center">
+ <app-titulo [contenidoTitulo]="'Registrar'"></app-titulo>
+  <app-input-texto [textoInput]="'Nombre'"></app-input-texto>
+  <app-input-texto [textoInput]="'Email'"></app-input-texto>
+  <app-input-texto [textoInput]="'Confirmar Mail'"></app-input-texto>
+  <app-input-password [passwordInput]="'Contarseña'" ></app-input-password>
+  <app-input-password [passwordInput]="'Confirmar Contraseña'" ></app-input-password>
+</div>
+<app-boton [nombreBoton]="'Registrar'"></app-boton>
+<p class="margen text-center">¿Ya tienes una cuenta?
+  <a href="">  Inicia Sesion
+  </a>
+</p>-->
 
 
-  <input typt = "text" #textoInput >
-  <p> Nombre: {{nombre}}</p>
-  <p> Apellido: {{apellido}}</p>
-  <p> Edad: {{edad}}</p>
-  <p> Sueldo: {{sueldo | currency}}</p>
-  <p> Fecha de nacimiento: {{fechaNacimiento | date: 'yyyy/MM/dd'}}</p>
+<!--<app-horario></app-horario>-->
+<!--<app-registar-usuario></app-registar-usuario>-->
 
-  <button (click)="cambiarClaseTitulo()">{{nombreBoton}}</button>
-  <button (click)="aplicarClase(textoInput.value)" >
-    Aplicar clase
-  </button>
+<button pButton type="button" label="Click"
+class="ui-button-success"></button>
+<p-button label="Click9" ></p-button>
+
+<button mat-button color="accent">
+  click me!!!
+</button>
+
+<ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+  <ngb-panel title="Simple">
+    <ng-template ngbPanelContent>
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+      labore sustainable VHS.
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel>
+    <ng-template ngbPanelTitle>
+      <span>&#9733; <b>Fancy</b> title &#9733;</span>
+    </ng-template>
+
+
+    <ng-template ngbPanelContent>
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+      labore sustainable VHS.
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel title="Disabled" [disabled]="true">
+    <ng-template ngbPanelContent>
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+      labore sustainable VHS.
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
+
+<!--<div class="row" >
+    <div class="col-sm-6 fondo-menu1">
+
+    </div>
+    <div class="col-sm-5 fondo-menu1">
+      <div class="nav">
+        <ul>
+          <app-menu1
+            [nombreMenu1]="'  Musica   |'"
+            [urlMenu1]="'https://woowmp3.net/'">
+
+          </app-menu1>
+          <app-menu1
+            [nombreMenu1]="'  Audio Latino  |'"
+            [urlMenu1]="'https://www.pelisplus.tv/'">
+
+          </app-menu1>
+          <app-menu1
+            [nombreMenu1]="'  Ver Los Simpsons  |'"
+            [urlMenu1]="'https://www.simpsonizados.org/'">
+          </app-menu1>
+          <app-menu1
+            [nombreMenu1]="'  Facebook  |'"
+            [urlMenu1]="'https://www.facebook.com/pelispedia.tv'">
+
+          </app-menu1>
+          <app-menu1
+            [nombreMenu1]="' Twitter |'"
+            [urlMenu1]="'https://twitter.com/pelispediatv'">
+
+          </app-menu1>
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm-1 fondo-menu1">
+    <nav >
+      <ul >
+        <a  class="fondo2-menu1" href="https://www.pelispedia.tv/login/">
+          Ingresar
+        </a>
+      </ul>
+    </nav>
+  </div>
 </div>
 
+<div class="row fondo-linea-colores">
+  <div class="col-sm-12"></div>
+</div>
+<div class="row">
+  <div class="col-sm-5 fondo-menu2" >
+    <h1>
+      <a href="https://www.pelispedia.tv"><span id="mainLogo" class="vectors vecLogo"><img alt="Pelispedia: Ver Peliculas en HD Online Gratis" src="https://www.pelispedia.tv/cdn/img/logo.png" style=" width: 150px; height: 40px; "></span></a>
+    </h1>
+  </div>
+  <div class="col-sm-7 fondo-menu2" >
+    <div class="nav text-center">
 
+        <app-menu2
+          [nombreMenu2]="'Home'"
+          [urlMenu2]="'https://www.pelispedia.tv/'"
+
+        ></app-menu2>
+        <app-menu2
+          [nombreMenu2]="'Estrenos'"
+          [urlMenu2]="'https://www.pelispedia.tv/'"
+
+        ></app-menu2>
+        <app-menu2
+          [nombreMenu2]="'Series'"
+          [urlMenu2]="'https://www.pelispedia.tv/series/all/'"
+
+        ></app-menu2>
+        <app-menu2
+          [nombreMenu2]="'DMCA'"
+          [urlMenu2]="'https://www.pelispedia.tv/dmca/'"
+
+        ></app-menu2>
+        <app-menu2
+          [nombreMenu2]="'Descarga'"
+          [urlMenu2]="'hhttps://www.pelispedia.org/'"
+
+        ></app-menu2>
+      <app-input-buscar class="fondo-icono-buscar"></app-input-buscar>
+
+    </div>
+  </div>
+
+
+</div>
+
+<div class="row">
+  <div class="col-sm-6"
+       *ngFor="let pelicula  of arregloPeliculas">
+    <app-pelicula-banner
+      [descripcionPelicula]="pelicula.descripcion"
+      [nombrePelicula]="pelicula.nombre"
+      [esEstreno]="pelicula.esEstreno"
+      [urlImagen]="pelicula.urlImagen"
+      (dioClickEnEstado)="alertar($event)"
+    >
+    </app-pelicula-banner>
+  </div>
+  <div class="col-sm-3"
+       *ngFor="let pelicula  of arregloPeliculas2">
+    <app-pelicula2
+      [nombrePelicula]="pelicula.nombre"
+      [esEstreno]="pelicula.esEstreno"
+      [urlImagen]="pelicula.urlImagen"
+      (dioClickEnEstado)="alertar($event)"
+    >
+    </app-pelicula2>
+  </div>
+</div>
+<div class="col-sm-12">
+  <app-titulo [contenidoTitulo] = "'ÚLTIMAS PELÍCULAS AGREGADAS'">
+
+  </app-titulo>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-sm-3"
+               *ngFor="let pelicula  of arregloPeliculas3">
+            <app-pelicula-imagen
+              [nombrePelicula]="pelicula.nombre"
+              [urlImagen]="pelicula.urlImagen"
+            >
+            </app-pelicula-imagen>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-sm-3"
+               *ngFor="let pelicula  of arregloPeliculas3_2 ">
+            <app-pelicula-imagen
+              [nombrePelicula]="pelicula.nombre"
+              [urlImagen]="pelicula.urlImagen"
+            >
+            </app-pelicula-imagen>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
+<div class="col-sm-12">
+  <app-titulo [contenidoTitulo] = "'ÚLTIMAS SERIES AGREGADAS'">
+
+  </app-titulo>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-sm-3"
+               *ngFor="let pelicula  of arregloSeries1_1 ">
+            <app-pelicula-imagen
+              [nombrePelicula]="pelicula.nombre"
+              [urlImagen]="pelicula.urlImagen"
+            >
+            </app-pelicula-imagen>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-sm-3"
+               *ngFor="let pelicula  of arregloSeries1_2 ">
+            <app-pelicula-imagen
+              [nombrePelicula]="pelicula.nombre"
+              [urlImagen]="pelicula.urlImagen"
+            >
+            </app-pelicula-imagen>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
+<div class="col-sm-12">
+  <app-titulo [contenidoTitulo] = "'ÚLTIMAS CAPITULOS AGREGADAS'">
+
+  </app-titulo>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-sm-3"
+               *ngFor="let pelicula  of arregloSeries2_1 ">
+            <app-pelicula-imagen
+              [nombrePelicula]="pelicula.nombre"
+              [urlImagen]="pelicula.urlImagen"
+            >
+            </app-pelicula-imagen>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="row">
+          <div class="col-sm-3"
+               *ngFor="let pelicula  of arregloSeries2_2 ">
+            <app-pelicula-imagen
+              [nombrePelicula]="pelicula.nombre"
+              [urlImagen]="pelicula.urlImagen"
+            >
+            </app-pelicula-imagen>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <app-footer></app-footer>
+  </div>
+</div>-->
+
+
+
+
+
+
+<!--<div class="row">
+
+  <div class="col-sm-6 text-center"
+       *ngFor="let pelicula of arregloPeliculas">
+
+    <app-pelicula-banner
+      [descripcionPelicula]="pelicula.descripcion"
+      [nombrePelicula]="pelicula.nombre"
+      [esEstreno]="pelicula.esEstreno"
+      [urlImagen]="pelicula.urlImagen"
+      (dioClickEnEstado)="alertar($event)"
+    >
+
+    </app-pelicula-banner>
+
+    <button (click)="pelicula.nombre = 'Adrian'"> Cambiar es estreno</button>
+
+
+  </div>
+
+
+  <div class="col-sm-2 text-center"
+       *ngFor="let numero of arregloNumeros; let indice = index">
+
+    {{indice}}: Numero {{numero}}
+
+  </div>
+
+
+  <div class="col-sm-6">
+    <h1 *ngIf="mostrarHola"> Hola </h1>
+    &lt;!&ndash;<button (click)="mostrarHola =!mostrarHola"> Cambiar </button>&ndash;&gt;
+  </div>
+  <div class="col-sm-6">
+    <h1 *ngIf="!mostrarHola"> Mundo </h1>
+  </div>
+
+  <div class="col-sm-3"></div>
+  <div class="col-sm-3"></div>
+  <div class="col-sm-3"></div>cd
+  <div class="col-sm-3"></div>
+
+</div>-->
+
+<!--CLASE 1-->
+
+<!--<div class="row">-->
+<!--<div class="col-sm-4"></div>-->
+<!--<div class="col-sm-4">-->
+<!--<app-grilla></app-grilla>-->
+<!--</div>-->
+<!--<div class="col-sm-4"></div>-->
+<!--</div>-->
+
+
+<!--
+<app-ejercicio></app-ejercicio>
+<app-pelicula-banner></app-pelicula-banner>
+-->
+
+
+<!--<h2 [class]="clase">Two way data binding</h2>-->
+<!--<ul>-->
+<!--<li> clase <-> template [(ngModel)]</li>-->
+<!--</ul>-->
+<!--<p>Clase: {{clase}}</p>-->
+<!--<input type="text"-->
+<!--id="clase"-->
+<!--name="clase"-->
+<!--[(ngModel)]="clase"-->
+<!--&gt;-->
+
+<!--<h2>One way data binding</h2>-->
+<!--<ul>-->
+<!--<li>Clase al template -> [class]</li>-->
+<!--<li>Template a la clase -> (click)</li>-->
+<!--</ul>-->
+
+<!--<div [hidden]="false">-->
+<!--<h1 [id]="nombreClase"-->
+<!--[class]="nombreClase"-->
+<!--&gt;Hola amigos</h1>-->
+<!--<input type="text" #textoInput >-->
+<!--<div>-->
+<!--<p>Nombre: {{nombre}}</p>-->
+<!--<p>Apellido: {{apellido}}</p>-->
+<!--<p>Edad: {{edad}}</p>-->
+<!--<p>Sueldo: {{sueldo | currency}}</p>-->
+<!--<p>Fecha nacimiento: {{fechaNacimiento | date:'yyyy/MM/dd'}}</p>-->
+
+<!--<button (blur)="cambiarClaseDeTitulo()"-->
+<!--(click)="cambiarClaseDeTitulo()">-->
+<!--{{nombreBoton}}-->
+<!--</button>-->
+<!--</div>-->
+<!--cd<button (click)="aplicarClase(textoInput.value)">-->
+<!--Aplicar clase-->
+<!--</button>-->
+<!--</div>-->

@@ -1,0 +1,38 @@
+<div class="row" style="width: 20%; margin-left: auto; margin-right: auto; text-align: center">
+  <span class="ui-float-label margen" >
+    <input pInputText id="id_nombre" #textoNombre type="text"  [(ngModel)] = "valorTextoInput" size="30">
+    <label for="id_nombre">Nombre</label>
+  </span>
+  <span class="ui-float-label margen" >
+    <input pInputText id="id_email" type="text" #textoEmail size="30">
+    <label for="id_email">Email</label>
+  </span>
+  <span class="ui-float-label margen" >
+    <input pInputText id="id_confirmar_email" type="text" #textoConfirmarEmail size="30">
+    <label for="id_confirmar_email">ConfirmarEmail</label>
+  </span>
+  <span class="ui-float-label margen" >
+    <input id="id_password" #textoPassword type="password" size="30" pInputText>
+    <label for="id_password">Contraseña</label>
+  </span>
+  <span class="ui-float-label margen" >
+    <input id="id_confirmar_password" #textoConfirmarPassword type="password" size="30" pInputText>
+    <label for="id_confirmar_password">Confirmar Contraseña</label>
+  </span>
+</div>
+<div class="text-center">
+  <button  pButton type="button" label="Registrar"
+           class="ui-button-success margen text-center"
+           (click)="leerDatos(textoNombre.value, textoEmail.value, textoPassword.value)"></button>
+
+  <br>
+
+</div>
+<p class="margen text-center">¿Ya tienes una cuenta?
+  <a href="">  Inicia Sesion
+  </a>
+</p>
+
+
+
+
